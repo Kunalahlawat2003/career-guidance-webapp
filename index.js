@@ -10,7 +10,7 @@ const app = express();
 app.use(bodyParser.json());
 
 app.use(cors({
-    origin: 'https://kunalahlawat2003.github.io/career-guidance-webapp/', // Update with your frontend URL
+    origin: 'https://kunalahlawat2003.github.io/career-guidance-webapp/', 
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type']
 }));
