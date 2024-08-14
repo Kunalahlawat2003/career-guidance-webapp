@@ -15,6 +15,9 @@ app.use(cors({
     allowedHeaders: ['Content-Type']
 }));
 
+app.use(express.static(path.join(__dirname, 'career-guidance-webapp')));
+
+
 // Replace with your MongoDB connection string
 const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
@@ -63,7 +66,9 @@ app.post('/index', async (req, res) => {
     }
   });
 
-app.use(express.static(path.join(__dirname, 'career-guidance-webapp')));
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'career-guidance-webapp', 'index.html'));
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
