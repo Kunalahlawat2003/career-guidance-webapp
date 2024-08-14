@@ -151,7 +151,7 @@ body{
 @media (max-width:480px){   /*for mobile*/
 
     body{
-        background-image: url(/img/pattern.jpg);
+/*         background-image: url(/img/pattern.jpg); */
     }
 
     .top-bar{
