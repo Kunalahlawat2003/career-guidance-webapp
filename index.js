@@ -15,7 +15,7 @@ app.use(cors({
     allowedHeaders: ['Content-Type']
 }));
 
-app.use(express.static(path.join(__dirname, 'career-guidance-webapp')));
+app.use(express.static(path.join(__dirname)));
 
 
 // Replace with your MongoDB connection string
@@ -67,7 +67,7 @@ app.post('/index', async (req, res) => {
   });
 
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'career-guidance-webapp', 'index.html'));
+    res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
