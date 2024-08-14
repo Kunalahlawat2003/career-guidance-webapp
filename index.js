@@ -16,7 +16,7 @@ app.use(cors({
 }));
 
 // Replace with your MongoDB connection string
-const mongoURI = 'mongodb+srv://ahlawatkunal21:Kunal2409@career.vzxa7hd.mongodb.net/?retryWrites=true&w=majority&appName=career';
+const mongoURI = process.env.MONGO_URI;
 mongoose.connect(mongoURI, { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => console.log('MongoDB connected'))
     .catch(err => console.log(err));
