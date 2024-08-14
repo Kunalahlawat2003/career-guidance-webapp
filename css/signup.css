@@ -34,22 +34,22 @@ body{
    }
     
    .slider .slide:nth-child(1) {
-      background-image: url('img/img1.jpg');
+      background-image: url('/img/img1.jpg');
       animation-delay: 0s;
    }
    
    .slider .slide:nth-child(2) {
-      background-image: url('img/im2.jpg');
+      background-image: url('/img/im2.jpg');
       animation-delay: 7s;
    }
    
    .slider .slide:nth-child(3) {
-      background-image: url('img/im3.jpg');
+      background-image: url('/img/im3.jpg');
       animation-delay: 14s;
    }
    
    .slider .slide:nth-child(4) {
-      background-image: url('img/img4.jpg');
+      background-image: url('/img/img4.jpg');
       animation-delay: 21s;
    }
 
