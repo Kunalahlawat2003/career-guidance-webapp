@@ -63,7 +63,7 @@ app.post('/index', async (req, res) => {
     }
   });
 
-app.use(express.static(path.join(__dirname, 'career guidance')));
+app.use(express.static(path.join(__dirname, 'career-guidance-webapp')));
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
